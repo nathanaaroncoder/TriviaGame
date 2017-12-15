@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Stranger Things Trivia</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="page-header">
+				Stranger Things Trivia
+			</div>
+			<div class="row">
+				<div class="col-xs-3 col-xs-offset-3">
+					<button id = "start-button" type="button" class="btn btn-default btn-lg">Start</button>
+				</div>
+			</div>
+			<div id="main">
+				<div id="timer-div" class="row">
+					<h2>Timer: <span id="timer"></span></h2>
+				</div>
+				<form>
+					<div class="question">
+						<div class="row">
+							<h3> What is the name of the monster in Season 1 of Stranger Things? </h3>
+						</div>
+						<div class = "allInputs" class ="row">
+							<label class="r-b">
+								<input type="radio" name="q1" id="inlineRadio1" value="0"> Lochness
+							</label>
+							<label class="r-b">
+								<input type="radio" name="q1" id="inlineRadio2" value="1"> Demogorgon
+							</label>
+							<label class="r-b">
+								<input type="radio" name="q1" id="inlineRadio3" value="0"> Mind Flayer
+							</label>
+							<label class="r-b">
+								<input type="radio" name="q1" id="inlineRadio3" value="0"> Your Mom
+							</label>
+						</div>
+					</div>
+				</form>
+				<div class="question">
+					<div class="row">
+						<h3>The creators of the show are:</h3>
+					</div>
+					<div class ="allInputs" class ="row">
+						<form>
+							<label class="r-b">
+								<input type="radio" name="q2" id="inlineRadio1" value="0"> Husband and Wife
+							</label>
+							<label class="r-b">
+								<input type="radio" name="q2" id="inlineRadio2" value="1"> Brothers
+							</label>
+							<label class="r-b">
+								<input type="radio" name="q2" id="inlineRadio3" value="0"> Sisters
+							</label>
+							<label class="r-b">
+								<input type="radio" name="q2" id="inlineRadio3" value="0"> Father and Daughter
+							</label>
+						</div>
+					</form>
+					<div class="question">
+						<div class="row">
+							<h3>Stranger Things is set in what time period?</h3>
+						</div>
+						<div class ="allInputs" class ="row">
+							<form>
+								<label class="r-b">
+									<input type="radio" name="q3" id="inlineRadio1" value="1"> 1980s
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q3" id="inlineRadio2" value="0"> 1960s
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q3" id="inlineRadio3" value="0"> Medieval Times
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q3" id="inlineRadio3" value="0"> 1800s
+								</label>
+							</div>
+						</div>
+					</form>
+					<div class="question">
+						<div class="row">
+							<h3>In what fictional city do the characters of Stranger Things reside?</h3>
+						</div>
+						<div class ="allInputs" class ="row">
+							<form>
+								<label class="r-b">
+									<input type="radio" name="q4" id="inlineRadio1" value="0"> Newtonville
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q4" id="inlineRadio2" value="0"> Strangetown
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q4" id="inlineRadio3" value="0"> Yesterday
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q4" id="inlineRadio3" value="1"> Hawkins
+								</label>
+							</div>
+						</form>
+					</div>
+					<div id="question">
+						<div class="row">
+							<h3>What is the name of the girl with superhuman abilities?</h3>
+						</div>
+						<div class ="allInputs" class ="row">
+							<form>
+								<label class="r-b">
+									<input type="radio" name="q5" id="inlineRadio1" value="1"> Eleven
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q5" id="inlineRadio2" value="0"> Sandy
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q5" id="inlineRadio3" value="0"> Jane
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q5" id="inlineRadio3" value="0"> Twelve
+								</label>
+							</div>
+						</form>
+					</div>
+					<div id="question">
+						<div class="row">
+							<h3>What do the characters call the other dimension the above character can travel to?</h3>
+						</div>
+						<div class ="allInputs" class ="row">
+							<form>
+								<label class="r-b">
+									<input type="radio" name="q6" id="inlineRadio1" value="0"> The Inside Out
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q6" id="inlineRadio2" value="0"> The Mysterious Beyond
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q6" id="inlineRadio3" value="0"> The Other Place
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q6" id="inlineRadio3" value="1"> The Upside Down
+								</label>
+							</div>
+						</form>
+					</div>
+					<div id="question">
+						<div class="row">
+							<h3>How many episodes are in the first season?</h3>
+						</div>
+						<div class ="allInputs" class ="row">
+							<form>
+								<label class="r-b">
+									<input type="radio" name="q7" id="inlineRadio1" value="0"> 7
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q7" id="inlineRadio2" value="1"> 8
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q7" id="inlineRadio3" value="0"> 15
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q7" id="inlineRadio3" value="0"> 10
+								</label>
+							</div>
+						</form>
+					</div>
+					<div id="question">
+						<div class="row">
+							<h3>All of the monster names come from which board game?</h3>
+						</div>
+						<div class ="allInputs" class ="row">
+							<form>
+								<label class="r-b">
+									<input type="radio" name="q8" id="inlineRadio1" value="0"> Monopoly
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q8" id="inlineRadio2" value="0"> Pokemon
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q8" id="inlineRadio3" value="1"> Dungeons and Dragons
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q8" id="inlineRadio3" value="0"> Magic
+								</label>
+							</div>
+						</form>
+					</div>
+					<div id="question">
+						<div class="row">
+							<h3>What is El's favorite food?</h3>
+						</div>
+						<div class ="allInputs" class ="row">
+							<form>
+								<label class="r-b">
+									<input type="radio" name="q9" id="inlineRadio1" value="1"> Eggos
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q9" id="inlineRadio2" value="0"> Ice Cream
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q9" id="inlineRadio3" value="0"> Lasagna
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q9" id="inlineRadio3" value="0"> Pretzels
+								</label>
+							</div>
+						</form>
+					</div>
+					<div id="question">
+						<div class="row">
+							<h3>Which of the following is the best show to binge-watch?</h3>
+						</div>
+						<div class ="allInputs" class ="row">
+							<form>
+								<label class="r-b">
+									<input type="radio" name="q10" id="inlineRadio1" value="1"> Stranger Things
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q10" id="inlineRadio2" value="1"> Stranger Things
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q10" id="inlineRadio3" value="1"> Stranger Things
+								</label>
+								<label class="r-b">
+									<input type="radio" name="q10" id="inlineRadio3" value="1"> All of the above
+								</label>
+							</div>
+						</form>
+					</div>
+					<div class="row">
+						<input id="submit-btn" class="btn btn-default" type="submit" value="Submit">
+					</div>
+					<!-- </form> -->
+				</div>
+			</div>
+			<script type="text/javascript" src="assets/javascript/app.js"></script>
+		</body>
+	</html>

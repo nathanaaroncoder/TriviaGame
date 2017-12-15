@@ -1,0 +1,53 @@
+body{
+	background-image: url("../images/The_Mind_Flayer_&_Will.png");
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	background-color: #010121;
+}
+
+.container-fluid{
+	font-family: 'Raleway', sans-serif;
+	padding: 5%;
+	color: white;
+	text-align: center;
+	
+	/*background-size: 100% 100%;*/
+	/*margin: 2%;*/
+
+}
+
+.r-b{
+	padding: 10px;
+	font-weight: 400;
+	font-size: 125%;
+}
+
+.page-header{
+	text-align: center;
+	font-size: 400%;
+}
+
+#start-button{
+	width: 200%;
+	padding: 10%;
+	font-size: 200%;
+	margin-top: 50%;
+	margin-bottom: 100%
+}
+
+#timer-div {
+	width: 100%;
+	text-align: center;
+}
+
+p {
+	font-size: 150%;
+}
+
+#submit-btn{
+	padding: 2%;
+	width: 20%;
+	font-size: 150%;
+	margin: 2%;
+}
